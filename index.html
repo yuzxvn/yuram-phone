@@ -692,7 +692,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .cal .clev u{flex:none;width:11px;height:11px;border-radius:50%;display:inline-block}
 .cal .clev.b{background:#d1e6f3;color:#1d6f9e}.cal .clev.b u{background:#3b94c8}
 .cal .clev.p{background:#f0d3f5;color:#8a1fa6}.cal .clev.p u{background:#b82fd6}
-.cal .clev.h{background:#ecdcf4;color:#8a1fa6}.cal .clev.h u{background:#b074d6}
+.cal .clev.h{background:#ecdcf4;color:#8a1fa6}
+.clev.s{visibility:hidden}.cal .clev.h u{background:#b074d6}
 .cal .clcb{position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(transparent,#fff 70%);z-index:4;pointer-events:none}
 .cal .cltp{position:absolute;bottom:29px;height:46px;border-radius:23px;background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.12);display:flex;align-items:center;z-index:6}
 
@@ -1847,7 +1848,7 @@ function showChzzk(tab){
   let c;
   if(tab === "home") c = `
     <img class="zlv" src="${ZZ.live}" alt="" style="margin-top:2px">
-    <div class="zlt">스다주밸리 도태 끝판왕 핑프의 정점<div class="m" style="font-size:15px;font-weight:400;color:#9a9da8;margin-top:9px;letter-spacing:0">${I.play.replace("<svg","<svg style='vertical-align:-2px;margin-right:4px'")}239 · 1시간 전</div>${tags(["마인크래프트","pjx","유람","카론","봉누도","스다주밸리"])}</div>
+    <div class="zlt">스다주밸리 도태 끝판왕 핑프의 정점<div class="m" style="font-size:15px;font-weight:400;color:#9a9da8;margin-top:9px;letter-spacing:0">${I.play.replace("<svg","<svg style='vertical-align:-2px;margin-right:4px'")}865 · 21시간 전</div>${tags(["마인크래프트","pjx","유람","카론","봉누도","스다주밸리"])}</div>
     <div class="zrow">${[0,1,2,3].map(i=>lk(ZLINK.bd[i],`<img src="${ZZ["bd"+i]}" alt="">`,"flex:none;display:block")).join("")}</div>
     <div class="sec">동영상</div>${chips(["전체","지난 방송","업로드 영상"],0,true)}
     <div class="hs"><div class="vc"><img src="${ZZ.v0}" alt=""><div class="t">스다주밸리 호수 점거자</div><div class="m">${I.play.replace("<svg","<svg style='vertical-align:-2px;margin-right:4px'")}1,288 · 17시간 전</div>${tags(["마인크래프트","pjx","유람","카론","봉누도"])}</div>
@@ -1948,7 +1949,11 @@ const CALEV = {   // "날짜":[[제목, 색]]  색: p=핑크(직장) b=파랑(�
   "2026-09-17":[["저챗+ 봉누도 (방송)","p"]],
   "2026-09-19":[["봉누도 (방송)","p"]],
   "2026-09-20":[["봉누도 (방송)","p"]],
-  "2026-09-25":[["Drowning(드라우닝) 버곡 업로드","b"]],
+  "2026-09-21":[["봉누도 (방송)","p",3]],
+  "2026-09-24":[["PJX 추석 합방 + 봉누도 (방송)","p"],["유람콘 준비","b",2]],
+  "2026-09-25":[["커버곡 공개 + 유람콘 (방송)","p"],["","s"],["Drowning(드라우닝) 버곡 업로드","b"]],
+  "2026-09-26":[["봉누도 (방송)","p"]],
+  "2026-09-27":[["봉누도 (방송)","p"]],
   "2026-10-01":[["봉누도 (방송)","p"]],
   "2026-10-03":[["봉누도 (방송)","p"]],
   "2026-10-04":[["봉누도 (방송)","p"]],
